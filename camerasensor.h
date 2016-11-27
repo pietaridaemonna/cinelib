@@ -9,37 +9,24 @@ class CameraSensor : public QObject
     Q_ENUMS(Brand)
 public:
     explicit CameraSensor(QObject *parent = 0);
-    enum Type {
-        APSCt,
-        MFT, //Micro Four Thirds
-        FULLFRAME,
-        ONEINCH,
-        RED_DRAGON_SUPER35, //RED DRAGON 13.8 MP Super 35 mm CMOS
-        RED_DRAGON_19MPXCMOS, //RED DRAGON 19.4 Megapixel CMOS
-        RED_HELIUM //HELIUM 35.4 Megapixel CMOS
-    };
 
     enum Size {
-        FULLFRAME_35MM, //35 mm "full frame" 36x24mm
-        APSC, //APS-C (Nikon, Sony, Pentax, Fuji etc   ~23.6x15.7mm
-        APSC_CANON, //22.2x14.8mm
-        SUPER16, //12.48mm x 7.02mm (Super 16)
-        SUPER35, //25.34mm x 14.25mm (Super35)
-        SUPER35_TODO, //22mm x 11.88mm (Super 35)
+        FULLFRAME_360x240, //35 mm "full frame" 36x24mm
+        APSC_236x157, //APS-C (Nikon, Sony, Pentax, Fuji etc   ~23.6x15.7mm
+        APSC_CANON_222x148, //22.2x14.8mm
+        SUPER16_125x702, //12.48mm x 7.02mm (Super 16), Blackmagic Pocket Cinema Camera, Blackmagic Studio Camera HD
+        SUPER35_253x143, //25.34mm x 14.25mm (Super35)
+        SUPER35_220x118, //22mm x 11.88mm (Super 35)
         SUPER65, //65 mm format digital cinema camera
         PANAVISION70,
-        PANAVISION_MILLENIUM_DXL_8K, //Large Format: 40.96mm x 21.60mm (Diagonal: 46.31mm)
-        BPCC, //Blackmagic Pocket Cinema Camera, 12.48mm x 7.02mm
-        BCC, //Blackmagic Cinema Camera, 15.81mm x 8.88mm
-        BSCHD, //Blackmagic Studio Camera HD, 12.48mm x 7.02mm
-        BMSC4K, //Blackmagic Micro Studio Camera 4K, 13.056mm x 7.344mm
-        MFTS, //Four Thirds system 17.3x13mm
-        LEICA, //TODO
-        RED_EPICW, //8k, 29.90 mm x 15.77 mm (Diagonal: 33.80 mm)
-        RED_SCARLETW ,//5k, 25.6 mm x 13.5 mm (Diagonal: 28.9 mm)
-        EPIC_DRAGON, //6k, 30.7 mm x 15.8 mm (Diagonal: 34.5 mm), RED DRAGON 19.4 Megapixel CMOS
-        EPIC_WEAPON6K, //30.7 mm x 15.8 mm (Diagonal: 34.5 mm), RED DRAGON 19.4 Megapixel CMOS
-        WEAPON_8K_S35//29.90 mm x 15.77 mm (Diagonal: 33.80 mm)
+        PANAVISION_MILLENIUM_DXL_8K_410x216, //Large Format: 40.96mm x 21.60mm (Diagonal: 46.31mm)
+        BCC_158x888, //Blackmagic Cinema Camera, 15.81mm x 8.88mm
+        BMSC4K_131x734, //Blackmagic Micro Studio Camera 4K, 13.056mm x 7.344mm
+        MFTS_173x130, //Four Thirds system 17.3x13mm
+        LEICAS_300x450, //Leica S, 30 x 45mm CCD
+        RED_EPICW_WEAPON8K_299x156, //8k, 29.90 mm x 15.77 mm (Diagonal: 33.80 mm)
+        RED_SCARLETW_256x135 ,//5k, 25.6 mm x 13.5 mm (Diagonal: 28.9 mm)
+        EPIC_DRAGON_WEAPON6K_307x158, //6k, 30.7 mm x 15.8 mm (Diagonal: 34.5 mm), RED DRAGON 19.4 Megapixel CMOS
 };
 
     enum Format {
