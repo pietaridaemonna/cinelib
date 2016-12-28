@@ -6,10 +6,10 @@
 class CameraSensor
 {
 
-	CameraSensor();
+	CameraSensor() {}
 
 	//SENSOR SIZE
-	public enum class Size {
+	enum SensorSize {
 		FULLFRAME_360x240, //35 mm "full frame" 36x24mm
 		APSC_236x157, //APS-C (Nikon, Sony, Pentax, Fuji etc   ~23.6x15.7mm
 		APSC_CANON_222x148, //22.2x14.8mm
@@ -28,7 +28,7 @@ class CameraSensor
 		EPIC_DRAGON_WEAPON6K_307x158 //6k, 30.7 mm x 15.8 mm (Diagonal: 34.5 mm), RED DRAGON 19.4 Megapixel CMOS
 	};
 
-	public enum class framerate_resolution {
+	enum framerate_resolution {
 		fps75_8K_8192x3456,
 		fps60_8K_8192x4320 //REDCODE RAW MAX FRAME RATES  1	60 fps at 8K Full Format (8192 x 4320), 75 fps at 8K 2.4:1 (8192 x 3456)
 		//60 fps at 7K Full Format (7168 x 3780), 75 fps at 7K 2.4:1 (7168 x 3024)
@@ -63,7 +63,7 @@ class CameraSensor
 	};
 
 	//ASPECT RATIO
-	public enum class aspect_ratio {
+	enum aspect_ratio {
 		//The most common aspect ratios used today in the presentation of films in cinemas are 1.85:1 and 2.39 : 1.
 		//Two common videographic aspect ratios are 4:3 (1.33:1), the universal video format of the 20th century,
 		//and 16:9 (1.77:1), universal for high - definition television and European digital television.
@@ -77,11 +77,12 @@ class CameraSensor
 	public string getSizeAsString(Size s) {
 		switch (s) {
 		case Size::FULLFRAME_360x240:
+			return "FULLFRAME_360x240";
 			break;
 		case Size::APSC_236x157:
-			break;
+			return "APSC_236x157";
 		case Size::APSC_CANON_222x148:
-			break;
+			return "APSC_CANON_222x148";
 		case Size::SUPER16_125x702:
 			break;
 		case Size::SUPER35_253x143:

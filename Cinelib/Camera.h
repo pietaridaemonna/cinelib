@@ -10,6 +10,8 @@ using namespace std;
 class Camera
 {
 	Camera();
+private:
+	int fka;
 
 public:
 	CameraSensor sensor;
@@ -17,9 +19,11 @@ public:
 	float positionx = 0.0;
 	float positiony = 0.0;
 	float positionz = 0.0;
+
 	int rotationx = 0;
 	int rotationy = 0;
 	int rotationz = 0;
+
 	int lookat[3] = { 0, 0, 0 };
 	
 

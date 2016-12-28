@@ -27,9 +27,6 @@
     <ClCompile Include="Cinelib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cinelib.h">
@@ -45,6 +42,9 @@
       <Filter>Camera</Filter>
     </ClInclude>
     <ClInclude Include="CameraLensProfile.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
       <Filter>Camera</Filter>
     </ClInclude>
   </ItemGroup>
