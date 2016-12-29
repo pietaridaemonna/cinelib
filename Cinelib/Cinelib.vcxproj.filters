@@ -22,6 +22,9 @@
     <Filter Include="Camera">
       <UniqueIdentifier>{0bb7a2dd-10a7-4c19-a51e-16e402982465}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{3a98b928-c9d9-4c63-9fee-781864423065}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cinelib.cpp">
@@ -47,5 +50,16 @@
     <ClInclude Include="Box.h">
       <Filter>Camera</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="staff.json">
+      <Filter>DB</Filter>
+    </None>
+    <None Include="lenses.json">
+      <Filter>DB</Filter>
+    </None>
+    <None Include="cameras.json">
+      <Filter>DB</Filter>
+    </None>
   </ItemGroup>
 </Project>

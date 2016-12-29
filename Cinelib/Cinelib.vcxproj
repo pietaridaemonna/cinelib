@@ -69,6 +69,11 @@
     <ClInclude Include="CameraSensor.h" />
     <ClInclude Include="Cinelib.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="cameras.json" />
+    <None Include="lenses.json" />
+    <None Include="staff.json" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>
